@@ -11,8 +11,7 @@ async function bootstrap() {
         transform: true,
         // any property not included in the whitelist is automatically stripped from the resulting object
         //property can be automatically removed from the resulting DTO.
-        whitelist: true,
-        forbidNonWhitelisted: true,
+        whitelist: false,
       }),
     )
     .enableCors();
